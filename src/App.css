@@ -1,0 +1,25 @@
+.todo-text {
+  word-wrap: break-word;  /* Break long words and wrap them to the next line */
+  word-break: break-word; /* Ensure very long words break and wrap */
+  white-space: normal;    /* Allow wrapping for long text */
+}
+.todos-container {
+  max-height: 250px; /* You can adjust this value to your preferred height */
+  overflow-y: auto;  /* Adds vertical scrolling when content overflows */
+  overflow-x: hidden;   
+  padding-right: 10px; /* Adds padding to avoid overlap with scroll bar */
+}
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.todos-container::-webkit-scrollbar {
+  display: none;           /* Hides the scrollbar */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.todos-container {
+  -ms-overflow-style: none;  /* Hides the scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.todos-container {
+  scrollbar-width: none;     /* Hides the scrollbar */
+}
